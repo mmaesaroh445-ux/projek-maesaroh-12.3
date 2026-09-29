@@ -1,0 +1,148 @@
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #f1f5f9;
+color: #1e293b;
+}
+
+.container {
+width: 90%;
+max-width: 1000px;
+margin: 30px auto;
+}
+
+header {
+background: #16a34a;
+color: white;
+padding: 25px;
+text-align: center;
+border-radius: 12px;
+margin-bottom: 20px;
+}
+
+header h1 {
+font-size: 32px;
+margin-bottom: 5px;
+}
+
+header p {
+font-size: 16px;
+}
+
+.form-section,
+.table-section {
+background: white;
+padding: 20px;
+border-radius: 12px;
+margin-bottom: 20px;
+}
+
+h2 {
+margin-bottom: 15px;
+}
+
+input,
+select,
+button {
+width: 100%;
+padding: 12px;
+margin-bottom: 10px;
+border-radius: 7px;
+border: 1px solid #cbd5e1;
+font-size: 15px;
+}
+
+button {
+background: #16a34a;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+button:hover {
+background: #15803d;
+}
+
+.rekap {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 15px;
+margin-bottom: 20px;
+}
+
+.card {
+padding: 20px;
+text-align: center;
+color: white;
+border-radius: 10px;
+}
+
+.card h3 {
+font-size: 28px;
+margin-bottom: 5px;
+}
+
+.hadir {
+background: #16a34a;
+}
+
+.izin {
+background: #eab308;
+}
+
+.sakit {
+background: #2563eb;
+}
+
+.alpa {
+background: #dc2626;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+th,
+td {
+padding: 12px;
+border-bottom: 1px solid #e2e8f0;
+text-align: center;
+}
+
+th {
+background: #f8fafc;
+}
+
+.btn-hapus {
+background: #dc2626;
+padding: 7px 12px;
+width: auto;
+margin: 0;
+}
+
+.btn-hapus:hover {
+background: #b91c1c;
+}
+
+@media (max-width: 700px) {
+.rekap {
+grid-template-columns: repeat(2, 1fr);
+}
+
+table {
+    font-size: 13px;
+}
+
+th,
+td {
+    padding: 8px 4px;
+}
+
+
+}

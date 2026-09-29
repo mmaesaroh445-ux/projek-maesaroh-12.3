@@ -1,0 +1,69 @@
+<!DOCTYPE html> <html lang="id"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Absensi Olahraga Atijaarah</title> <link rel="stylesheet" href="style.css"> </head> <body>
+<div class="container">
+    <header>
+        <h1>Atijaarah</h1>
+        <p>Absensi Olahraga</p>
+    </header>
+
+    <section class="form-section">
+        <h2>Tambah Absensi</h2>
+
+        <input type="text" id="nama" placeholder="Nama peserta">
+
+        <input type="date" id="tanggal">
+
+        <select id="status">
+            <option value="Hadir">Hadir</option>
+            <option value="Izin">Izin</option>
+            <option value="Sakit">Sakit</option>
+            <option value="Alpa">Alpa</option>
+        </select>
+
+        <button onclick="tambahAbsensi()">Tambah</button>
+    </section>
+
+    <section class="rekap">
+        <div class="card hadir">
+            <h3 id="jumlahHadir">0</h3>
+            <p>Hadir</p>
+        </div>
+
+        <div class="card izin">
+            <h3 id="jumlahIzin">0</h3>
+            <p>Izin</p>
+        </div>
+
+        <div class="card sakit">
+            <h3 id="jumlahSakit">0</h3>
+            <p>Sakit</p>
+        </div>
+
+        <div class="card alpa">
+            <h3 id="jumlahAlpa">0</h3>
+            <p>Alpa</p>
+        </div>
+    </section>
+
+    <section class="table-section">
+        <h2>Daftar Absensi</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Tanggal</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+
+            <tbody id="daftarAbsensi">
+            </tbody>
+        </table>
+    </section>
+</div>
+
+<script src="script.js"></script>
+
+</body> </html>
